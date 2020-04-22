@@ -3,9 +3,8 @@
     "description": "Extension for PHPStan to allow analysis of Magento 1 code.",
     "type": "library",
     "require": {
-        "phpstan/phpstan": "^0.11",
-        "php": ">= 7.2",
-        "nikic/php-parser": "^4.4"
+        "phpstan/phpstan": "^0.11|^0.12",
+        "php": ">= 7.2"
     },
     "replace": {
         "inviqa/phpstan-magento1": "0.1.5"
