@@ -1,10 +1,10 @@
 parameters:
-    bootstrap: %currentWorkingDirectory%/vendor/vianetz/phpstan-magento1/phpstan-bootstrap.php
     excludes_analyse:
         - */app/code/local/*/*/data/*
         - */app/code/local/*/*/sql/*
-    autoload_files:
+    bootstrapFiles:
         - %currentWorkingDirectory%/htdocs/app/Mage.php
+        - %currentWorkingDirectory%/vendor/vianetz/phpstan-magento1/phpstan-bootstrap.php
 
 services:
     -
