@@ -4,7 +4,9 @@ parameters:
         - */app/code/local/*/*/sql/*
     bootstrapFiles:
         - %currentWorkingDirectory%/htdocs/app/Mage.php
-        - %currentWorkingDirectory%/vendor/vianetz/phpstan-magento1/phpstan-bootstrap.php
+        - phpstan-bootstrap.php
+    typeAliases:
+        Mage_Catalog_Model_Entity_Product_Collection: 'Mage_Catalog_Model_Resource_Product_Collection'
 
 services:
     -
